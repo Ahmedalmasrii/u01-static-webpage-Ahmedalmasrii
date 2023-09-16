@@ -10,13 +10,16 @@
     padding: 15px;
     font-size: x-large;
     color:rgb(89, 89, 120);
+    
 }
 
-.box {
+.box , 
+.work-experience {
     width: 500px;
     height: 200px;
     padding: 15px;
     color: black;
+    
     
 }
 
