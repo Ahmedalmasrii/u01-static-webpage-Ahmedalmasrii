@@ -19,5 +19,8 @@ body {
     float: left;
     padding: 10px;
 }
+.column-side {
+    width: 25%;
+}
 
 
