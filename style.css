@@ -6,6 +6,12 @@
 body{
 }
 
+.myphoto {
+    width: 250px;
+    height: 100%;
+    border: 3px solid black;
+    border-radius: 100%;
+}
 
 .header-container {
     background: fixed;
