@@ -2,3 +2,43 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18vh;
+    border-bottom: 5px solid black;
+ padding: 10px;
+
+    
+}
+
+.navlink {
+    list-style: none;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-shadow: grey 1px 1px;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: grey;
+    text-decoration: underline;
+
+   
+}
