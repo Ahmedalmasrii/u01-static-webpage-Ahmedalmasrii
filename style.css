@@ -10,6 +10,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    padding: 10px
 
 }
 
@@ -100,4 +101,15 @@ p {
  position: relative;
  font-size: small;
  font-family:initial;
+ font-style: italic;
+}
+.experience {
+    text-decoration: underline;
+    font-weight: 600;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+h3 {
+    padding-top: 10px;
+    font-style: italic;
 }
