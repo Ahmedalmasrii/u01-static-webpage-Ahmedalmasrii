@@ -80,12 +80,13 @@ a:hover{
     flex-direction: column;
     
 }
-.section-text1  , p {
+.section-text1  ,  {
 margin-top: 20px;
 position: relative;
 font-size: small;
 font-family:initial;
 }
+
 
 .section-container {
     text-align: left;
@@ -93,4 +94,10 @@ font-family:initial;
 .title {
     text-align: left;
 }
-
+p {
+ line-height: 1;
+ margin-top: 10px;
+ position: relative;
+ font-size: small;
+ font-family:initial;
+}
