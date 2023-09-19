@@ -71,18 +71,25 @@ a:hover{
     border-radius: 2rem;
     padding: 1rem;
 }
+.position{
+    width: 40%;
+}
 #about {
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
 }
-.section-text1 , .title {
+.section-text1  , p {
 margin-top: 20px;
 position: relative;
-text-align: center;
 font-size: small;
-font-family: initial;
+font-family:initial;
 }
 
+.section-container {
+    text-align: left;
+}
+.title {
+    text-align: left;
+}
