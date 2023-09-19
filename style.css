@@ -67,10 +67,21 @@ a:hover{
     font-weight: 700;
 }
 
-.btn, .btn-download {
+.btn {
     font-weight: 600;
     border-radius: 2rem;
     padding: 1rem;
+    background-color: bisque;
+}
+.btn-download {
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: rgb(188, 165, 165);
+}
+.btn-download:hover , .btn:hover {
+    background-color: rgba(81, 75, 75, 0);
+    box-shadow: 2px 2px 2px black;
 }
 .position{
     width: 40%;
