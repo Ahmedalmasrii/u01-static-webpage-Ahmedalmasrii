@@ -13,6 +13,7 @@ body {
 
 }
 
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -43,9 +44,9 @@ a:hover{
 }
 .logo {
     font-size: 2rem;
-    font-weight: 700;
     color: black;
     text-decoration: underline;
+    font-family: initial;
 }
 #myphoto {
     width: 250px;
@@ -73,6 +74,15 @@ a:hover{
 #about {
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.section-text1 , .title {
+margin-top: 20px;
+position: relative;
+text-align: center;
+font-size: small;
+font-family: initial;
+}
+
