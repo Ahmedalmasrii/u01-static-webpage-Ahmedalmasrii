@@ -145,7 +145,20 @@ h3 {
       object-fit: cover;
      
     }
+    .navlink {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3 ,auto);
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    .navlink:hover a {
+        color: gray;
+        text-decoration: underline;
+        text-shadow: grey 1px 1px;
+        text-underline-offset: 0.5rem;
+    }
     *, *::before, *::after {
         box-sizing: border-box;
       }
+
   }
