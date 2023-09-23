@@ -123,3 +123,27 @@ h3 {
 
 }
 
+@media (max-width: 768px) {
+    
+    body {
+      font-size: 15px;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #profile {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .video {
+      height: auto; 
+      width: 100%;
+      object-fit: cover;
+     
+    }
+    *, *::before, *::after {
+        box-sizing: border-box;
+      }
+  }
