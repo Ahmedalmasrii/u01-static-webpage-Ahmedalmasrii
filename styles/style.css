@@ -6,7 +6,7 @@
 
 body {
   font-family: sans-serif;
-  background: url(images/main-sectionpic.png);
+  background: url(/images/main-sectionpic.png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -107,7 +107,7 @@ a:hover {
   text-align: left;
   display: flex;
   flex-direction: column;
-  padding-top: 14px;
+  padding: 14px;
 }
 
 .section-text1 {
@@ -151,6 +151,9 @@ h3 {
   height: auto;
   object-fit: cover;
 }
+.experience-skills {
+  padding: 14px;
+}
 
 .main-table,
 th,
@@ -171,8 +174,9 @@ td {
     align-items: center;
     margin: 0;
   }
-  .cv-video {
-    height: 50vh;
+  .cv-video, .text {
+    width: 100%;
+    height: auto;
     object-fit: cover;
     justify-content: center;
   }
