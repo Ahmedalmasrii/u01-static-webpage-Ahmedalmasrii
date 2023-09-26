@@ -154,7 +154,28 @@ h3 {
 .experience-skills {
   padding: 14px;
 }
+.container-skills{
+  width: 50vh;
+  background: #ddd;
+  border-radius: 10px;
+}
+.skills {
+  text-align: right;
+  padding: 10px 0px;
+  color: rgb(5, 5, 5);
+}
+.html {
+  width: 90%; 
+  background-color: #bee3d5;}
 
+.css {
+  width: 80%; 
+  background-color: #bdd7ec;
+}
+.js {
+  width: 65%; 
+  background-color: #f3c1be;
+}
 .main-table,
 th,
 td {
@@ -205,5 +226,8 @@ td {
   }
   .icons {
     margin-left: 0;
+  }
+  .container-skills {
+    width: 24vh;
   }
 }
