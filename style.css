@@ -59,6 +59,7 @@ a:hover{
     position: relative;
     display: flex;
     margin-left: 74%;
+    justify-content: space-between;
 }
 .fb-icon, .insta-icon,.link-icon 
     {
