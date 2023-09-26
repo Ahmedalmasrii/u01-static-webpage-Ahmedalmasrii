@@ -21,7 +21,7 @@ nav {
     align-items: center;
     height: 18vh;
     border-bottom: 5px solid black;
- padding: 10px;
+    padding: 10px;
 
     
 }
@@ -54,7 +54,10 @@ a:hover{
 
 #profile{
     padding-top: 50px;
-    background-image: url(images/Ljusarebakgrundsbild.png);
+    
+
+    background: rgb(171,166,168);
+    background: linear-gradient(90deg, rgba(171,166,168,1) 51%, rgba(0,0,0,1) 100%);
     background-size: cover;
     height: 100%;
     text-align: center;
@@ -138,7 +141,6 @@ h3 {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       padding: 0;
       margin: 0;
     }
@@ -167,7 +169,6 @@ h3 {
       }
       .position, .experience-details-container{
         width: 100%;
-        padding: 2rem;
       }
       
   }
