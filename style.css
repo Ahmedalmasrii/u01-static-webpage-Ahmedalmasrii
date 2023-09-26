@@ -35,6 +35,8 @@ nav {
     align-items: center;
 }
 
+
+
 a{
     color: black;
     text-decoration: none;
@@ -51,6 +53,18 @@ a:hover{
     text-decoration: underline;
     font-family: initial;
 }
+
+.icons {
+    width: 100px;
+    position: relative;
+    display: flex;
+    margin-left: 74%;
+}
+.fb-icon, .insta-icon,.link-icon 
+    {
+        padding-top: 10px;
+        width: 30px;
+    }
 
 #profile{
     padding-top: 50px;
@@ -165,7 +179,7 @@ h3 {
       .position{
         width: 100%;
       }
-      
+
       #experience {
         padding-top: 10px;
         height: 10vh;
