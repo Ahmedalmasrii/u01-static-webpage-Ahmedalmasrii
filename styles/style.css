@@ -186,6 +186,9 @@ h3 {
   width: 100vh;
   padding: 10px;
 }
+.table-row img{
+  width: 3rem;
+}
 
 
 @media (max-width: 768px) {
@@ -233,5 +236,8 @@ h3 {
   }
   .container-skills {
     width: 24vh;
+  }
+  .table-row {
+    width: 10vh;
   }
 }
