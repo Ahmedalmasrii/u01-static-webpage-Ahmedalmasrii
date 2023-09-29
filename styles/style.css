@@ -19,10 +19,6 @@ section {
   flex-direction: column;
 }
 
-.container {
-  width: 100%;
-}
-
 /*--------NAV-----*/
 
 nav {
@@ -80,47 +76,18 @@ a:hover {
   text-align: center;
   font-weight: 700;
 }
-
-.btn {
-  font-weight: 600;
-  border-radius: 2rem;
-  padding: 1rem;
-  background-color: bisque;
-  margin: 14px 10px;
-}
-
-.btn-download {
-  font-weight: 600;
-  border-radius: 2rem;
-  padding: 1rem;
-  background-color: rgb(188, 165, 165);
-}
-
-.btn-download:hover,
-.btn:hover {
-  background-color: rgba(81, 75, 75, 0);
-  box-shadow: 2px 2px 2px black;
-}
-
-/*.position {
-  width: 40%;
-}*/
 /*--------------info om mig-------*/
 #about {
   text-align: left;
   display: flex;
   flex-direction: column;
   padding: 14px;
-  width: 40%;
+  width: 50%;
 }
 
 .section-text1 {
   margin-top: 20px;
   position: relative;
-}
-
-.section-container {
-  text-align: left;
 }
 
 .title {
@@ -218,7 +185,6 @@ img {
     height: 100%;
     width: 100%;
   }
-
   #profile {
     display: flex;
     flex-direction: column;
@@ -237,7 +203,10 @@ img {
 
   nav {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
   }
 
   .navlink {
@@ -253,12 +222,11 @@ img {
     text-underline-offset: 0.5rem;
   }
 
+  #about {
+    width: 90vw;
+  }
   .experience-skills {
     padding-top: 10px;
-  }
-
-  nav {
-    height: 30vh;
   }
 
   .icons {
@@ -269,11 +237,6 @@ img {
     width: 24vh;
   }
 
-  .table-row img {
-    width: 1.5rem;
-    height: auto;
-  }
-
   footer {
     margin: 0 auto;
     width: 100%;
@@ -282,8 +245,5 @@ img {
     position: relative;
     justify-content: center;
   }
-
-  table {
-    display: grid;
-  }
+  
 }
