@@ -1,30 +1,42 @@
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  line-height: 1.5;
 }
 
 body {
   font-family: sans-serif;
+  font-style: italic;
+  font-size: 1.3rem;
   background: url(/images/main-sectionpic.png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+}
+
+/*--------NAV-----*/
+
 nav {
+  width: calc(100%-40px);
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 18vh;
-  border-bottom: 5px solid black;
-  padding: 10px;
-  width: 100vw;
+  margin: 20px;
 }
 
 .navlink {
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 2rem;
@@ -47,25 +59,16 @@ a:hover {
   font-size: 2rem;
   color: black;
   text-decoration: underline;
-  font-family: initial;
-}
-
-.icons {
-  width: 100px;
-  position: relative;
-  display: flex;
-  margin-left: 70%;
-  justify-content: space-between;
 }
 
 .fb-icon,
 .insta-icon,
 .link-icon {
-  padding-top: 10px;
-  width: 30px;
+  width: 2rem;
 }
 
-#profile {
+/*-----------PROFILE----------*/
+.profile {
   padding-top: 50px;
   background: rgb(171, 166, 168);
   background: linear-gradient(
@@ -99,22 +102,21 @@ a:hover {
   box-shadow: 2px 2px 2px black;
 }
 
-.position {
+/*.position {
   width: 40%;
-}
-
+}*/
+/*--------------info om mig-------*/
 #about {
   text-align: left;
   display: flex;
   flex-direction: column;
   padding: 14px;
+  width: 40%;
 }
 
 .section-text1 {
   margin-top: 20px;
   position: relative;
-  font-size: small;
-  font-family: initial;
 }
 
 .section-container {
@@ -126,18 +128,13 @@ a:hover {
 }
 
 p {
-  line-height: 1;
   margin-top: 10px;
   position: relative;
-  font-size: small;
-  font-family: initial;
-  font-style: italic;
 }
 
-.experience {
-  text-decoration: underline;
-  font-weight: 600;
-  font-style: italic;
+#experience {
+  font-size: 1.3rem;
+  text-decoration: none;
   padding: 10px 0px;
 }
 
@@ -151,50 +148,77 @@ h3 {
   height: auto;
   object-fit: cover;
 }
+
+.cv-video {
+  width: 100%;
+}
+
+/*--------mina skills------*/
 .experience-skills {
   padding: 14px;
 }
-.container-skills{
+
+.container-skills {
   width: 50vh;
   background: #ddd;
   border-radius: 10px;
 }
+
 .skills {
   text-align: right;
   padding: 10px 0px;
   color: rgb(5, 5, 5);
 }
+
 .html {
-  width: 90%; 
-  background-color: #bee3d5;}
+  width: 90%;
+  background-color: #bee3d5;
+}
 
 .css {
-  width: 80%; 
+  width: 80%;
   background-color: #bdd7ec;
 }
+
 .js {
-  width: 65%; 
+  width: 65%;
   background-color: #f3c1be;
 }
-.footer-class {
-  margin: 0 auto;
+
+/*-----------FOOTER------*/
+footer {
+  width: 100%;
   border-top: 2px solid black;
+  position: relative;
 }
 
-.main-table th, td{
-  text-align: center; 
-  width: 100vh;
+table {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.table-row th {
   padding: 10px;
 }
-.table-row img{
-  width: 3rem;
+
+.table-row th {
+  padding: 10px;
 }
 
+img {
+  width: 2rem;
+}
+
+/*---------MEDIA QUERIES-------*/
 
 @media (max-width: 768px) {
   body {
     font-size: 15px;
+    height: 100%;
+    width: 100%;
   }
+
   #profile {
     display: flex;
     flex-direction: column;
@@ -202,42 +226,64 @@ h3 {
     align-items: center;
     margin: 0;
   }
-  .cv-video, .text {
+
+  .cv-video,
+  .text {
     width: 100%;
     height: auto;
     object-fit: cover;
     justify-content: center;
   }
-  .navlink {
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, auto);
-    gap: 1rem;
-    align-items: flex-start;
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
   }
+
+  .navlink {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
   .navlink:hover a {
     color: gray;
     text-decoration: underline;
     text-shadow: grey 1px 1px;
     text-underline-offset: 0.5rem;
   }
-  .position {
-    width: 100%;
-  }
 
   .experience-skills {
     padding-top: 10px;
-    height: 10vh;
   }
+
   nav {
     height: 30vh;
   }
+
   .icons {
     margin-left: 0;
   }
+
   .container-skills {
     width: 24vh;
   }
-  .table-row {
-    width: 10vh;
+
+  .table-row img {
+    width: 1.5rem;
+    height: auto;
+  }
+
+  footer {
+    margin: 0 auto;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+
+  table {
+    display: grid;
   }
 }
