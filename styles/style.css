@@ -6,7 +6,7 @@
 body {
   font-style: italic;
   font-size: 1.3rem;
-  background: url(/images/main-sectionpic.png);
+  background: url(../images/main-sectionpic.png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
