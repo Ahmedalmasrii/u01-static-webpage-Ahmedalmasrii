@@ -17,11 +17,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-}
-
 /*--------NAV-----*/
 
 nav {
@@ -48,6 +43,7 @@ a {
   text-decoration: none;
   color: #fff;
 }
+/*-------anchor------*/
 
 a,
 .btn {
@@ -61,10 +57,29 @@ a:hover {
   text-underline-offset: 0.5rem;
   text-decoration: rgb(181, 181, 181);
 }
-
+/*--------logo-------*/
 .logo {
   font-size: 2rem;
 }
+
+.logo:hover {
+  cursor: default;
+}
+/*-----section---*/
+section {
+  padding-top: 4vh;
+  height: 95vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+  display: flex;
+}
+
+.section-container {
+  display: flex;
+}
+
+/*--------icons------*/
 
 .fb-icon,
 .insta-icon,
