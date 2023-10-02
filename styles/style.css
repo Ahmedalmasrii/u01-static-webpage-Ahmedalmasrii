@@ -3,6 +3,9 @@
   line-height: 1.5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-style: italic;
   font-size: 1.3rem;
@@ -94,6 +97,7 @@ a:hover {
 p {
   margin-top: 10px;
   position: relative;
+  color: rgb(85, 85, 85);
 }
 
 #experience {
