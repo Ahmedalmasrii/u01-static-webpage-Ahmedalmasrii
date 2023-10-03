@@ -117,12 +117,40 @@ section {
 
 /*--------------info om mig-------*/
 #about {
+  position: relative;
+  background-image: url(../images/Ljusarebakgrundsbild.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  padding: 14px;
-  width: 50%;
+  border-top: 3px solid black;
+  overflow: auto;
 }
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+
 /*----------section----*/
 .section__text{
   text-align: center;
