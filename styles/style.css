@@ -16,6 +16,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+p {
+  margin-top: 10px;
+  position: relative;
+  color: rgb(85, 85, 85);
+}
+
 /*--------NAV-----*/
 
 nav {
@@ -140,27 +146,67 @@ section {
   text-align: left;
 }
 
-p {
-  margin-top: 10px;
+
+
+
+
+
+
+
+
+/*----------Button-------*/
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  border-radius: 2rem;
+  font-weight: 600;
+  outline: 0;
+  padding: 1rem;
   position: relative;
-  color: rgb(85, 85, 85);
+  transition: all 300ms ease;
+  width: 8rem;
+}
+
+
+.btn-color-1
+{
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover {
+  background: rgb(7, 7, 7);
+}
+
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  border: rgb(255, 255, 255) 0.1rem solid;
+  color: white;
+  cursor: pointer;
+
+}
+
+
+
+/*--------mina skills------*/
+h3 {
+  padding-top: 10px;
+  font-style: italic;
+}
+.experience-skills {
+  padding: 14px;
 }
 
 #experience {
   font-size: 1.3rem;
   text-decoration: none;
   padding: 10px 0px;
-}
-
-h3 {
-  padding-top: 10px;
-  font-style: italic;
-}
-
-
-/*--------mina skills------*/
-.experience-skills {
-  padding: 14px;
 }
 
 .container-skills {
