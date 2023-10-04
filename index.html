@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>My CV</title>
   </head>
@@ -10,11 +10,13 @@
     <nav id="desktop-nav">
       <div>
         <div class="logo">Ahmed A</div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-position">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
     <section id="profile">
@@ -25,9 +27,7 @@
         <p class="section__text__p2">Full Stack Utvecklare</p>
         <div class="btn-container">
           <button class="btn btn-color-2">Download CV</button>
-          <button class="btn btn-color-1">
-            Contact Info
-          </button>
+          <button class="btn btn-color-1">Contact Info</button>
         </div>
       </div>
     </section>
@@ -37,20 +37,17 @@
       <div class="section-container">
         <div class="about-details-container">
           <div class="about-containers">
-        
-            <h3>Experience</h3>
-            <p>2+ years <br />Frontend Development</p>
-            <div class="details-container1">
-              <h3>Education</h3>
-              <p>Social science <br />Linne Grammar school, Uppsala</p>
-            </div>
-            <div class="details-container2">
-              <h3>Education</h3>
-              <p>Full stack developer <br />Chasacademy, Stockholm</p>
+            <div class="details-center">
+              <div class="details-container1">
+                <h3>Education</h3>
+                <p>Social science <br />Linne Grammar school, Uppsala</p>
+              </div>
+              <div class="details-container2">
+                <h3>Education</h3>
+                <p>Full stack developer <br />Chasacademy, Stockholm</p>
+              </div>
             </div>
 
-            
-            
             <div class="text-container">
               <p>
                 25 year old driven, ambitious, goal-oriented and responsible
@@ -162,76 +159,71 @@
       </div>
     </section>
 
-    <!--
-      <footer>
-
+    <footer>
       <div class="icons">
         <table>
           <tr>
             <th scope="row">
-              <a
-              class="email-icon"
-              href="mailto:ahmedalmasri2013@gmail.com"
-              >
-              <img
-              class="email-icon"
-              src="images/envelope-solid.svg"
-              alt="Mail icon"
-              />
-            </a>
-          </th>
-          <th scope="row">
-            <a class="phone-icon" href="tel:+46700942249">
-              <img
+              <a class="email-icon" href="mailto:ahmedalmasri2013@gmail.com">
+                <img
+                  class="email-icon"
+                  src="images/envelope-solid.svg"
+                  alt="Mail icon"
+                />
+              </a>
+            </th>
+            <th scope="row">
+              <a class="phone-icon" href="tel:+46700942249">
+                <img
                   id="phone-icon"
                   src="images/icons8-phone.svg"
                   alt="Phone icon"
+                />
+              </a>
+            </th>
+            <th scope="row">
+              <a class="home-icon" href="#">
+                <img src="images/icons8-home.svg" alt="Home icon" />
+              </a>
+            </th>
+            <div class="social-icon">
+              <th scope="row">
+                <a
+                  class="fb-icon"
+                  href="https://www.facebook.com/ahmad.almasri.5496"
+                >
+                  <img
+                    class="fb-icon"
+                    src="images/facebook-logo-2163.svg"
+                    alt="Fcebook icon"
                   />
                 </a>
               </th>
               <th scope="row">
-                <a class="home-icon" href="#">
-                  <img src="images/icons8-home.svg" alt="Home icon" />
+                <a class="insta-icon" href="https://www.instagram.com/">
+                  <img
+                    class="insta-icon"
+                    src="images/instagram-2165.svg"
+                    alt="Instagram icon"
+                  />
                 </a>
               </th>
               <th scope="row">
                 <a
-                class="fb-icon"
-                href="https://www.facebook.com/ahmad.almasri.5496"
+                  class="link-icon"
+                  href="https://www.linkedin.com/in/ahmed-a-59baa524a"
                 >
-                <img
-                class="fb-icon"
-                src="images/facebook-logo-2163.svg"
-                alt="Fcebook icon"
-                />
-              </a>
-            </th>
-            <th scope="row">
-              <a class="insta-icon" href="https://www.instagram.com/">
-                <img
-                class="insta-icon"
-                src="images/instagram-2165.svg"
-                alt="Instagram icon"
-                />
-              </a>
-            </th>
-            <th scope="row">
-              <a
-              class="link-icon"
-              href="https://www.linkedin.com/in/ahmed-a-59baa524a"
-              >
-              <img
-              class="link-icon"
-              src="images/linkedin-2166.svg"
-              alt="LinkedIn icon"
-              />
-            </a>
-          </th>
-        </tr>
-        
-      </table>
-    </div>
-  </footer>
--->
+                  <img
+                    class="link-icon"
+                    src="images/linkedin-2166.svg"
+                    alt="LinkedIn icon"
+                  />
+                </a>
+              </th>
+            </div>
+          </tr>
+        </table>
+      </div>
+    </footer>
   </body>
 </html>
