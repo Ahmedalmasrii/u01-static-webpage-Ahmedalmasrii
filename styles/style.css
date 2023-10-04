@@ -1,8 +1,585 @@
 * {
   margin: 0;
+  padding: 0;
   line-height: 1.5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-style: italic;
+  font-size: 1.3rem;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  position: relative;
+  color: rgb(85, 85, 85);
+}
+nav {
+  height: 20vh;
+  width: 100%;
+  border-bottom: 5px solid black;
+  justify-content: space-between;
+}
+
+nav,
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  font-size: 2rem;
+  height: 2rem;
+  width: 10vw;
+}
+.nav-position {
+  display: flex;
+}
+a {
+  color: black;
+  text-decoration: none;
+  color: #090909;
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-shadow: grey 1px 1px;
+  text-underline-offset: 0.5rem;
+  text-decoration: rgb(181, 181, 181);
+}
+.logo {
+  padding-top: 1rem;
+  font-size: 4rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+#desktop-nav {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+
+section {
+  padding-top: 4vh;
+  padding-left: 10px;
+  margin: 0.5rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section-container {
+  display: flex;
+}
+
+#ahmedpic {
+  width: 23rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+  margin: 0;
+}
+
+#profile {
+  padding-top: 2rem;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/Ljusarebakgrundsbild.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#about {
+  background-image: url(../images/Ljusarebakgrundsbild.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 3px solid black;
+  overflow: auto;
+  width: 100%;
+  margin: 0;
+}
+
+.about-containers {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.about-details-container {
+  margin: 0;
+  width: 100%;
+}
+
+.details-center {
+  display: flex;
+  justify-content: center;
+}
+
+.details-container1,
+.details-container2 {
+  padding: 10px;
+  margin-bottom: 4rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.details-container {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.2rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/*----------section----*/
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+/*------title----*/
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+/*----------Button-------*/
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  border-radius: 2rem;
+  font-weight: 600;
+  outline: 0;
+  padding: 1rem;
+  position: relative;
+  transition: all 300ms ease;
+  width: 10rem;
+  height: 5rem;
+}
+
+.btn-color-1 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover {
+  background: rgb(7, 7, 7);
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  border: rgb(255, 255, 255) 0.1rem solid;
+  color: white;
+  cursor: pointer;
+}
+/*--------mina skills------*/
+h3 {
+  padding-top: 1px;
+  font-style: italic;
+}
+
+#experience {
+  background-image: url(../images/Ljusarebakgrundsbild.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+.experience-sub-title {
+  color: #555555;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+article {
+  display: flex;
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  justify-content: center;
+}
+
+article:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+
+article .icon {
+  cursor: default;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-style: italic;
+    font-size: 1.3rem;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /*--------NAV-----*/
+
+  nav {
+    position: relative;
+    height: fit-content;
+    border-bottom: 5px solid black;
+  }
+  nav,
+  .nav-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-links {
+    list-style: none;
+    font-size: 2rem;
+    gap: 2rem;
+    height: 5rem;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    color: #090909;
+  }
+
+  /*-------anchor------*/
+
+  a,
+  .btn {
+    transition: all 300ms ease;
+  }
+
+  a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-shadow: grey 1px 1px;
+    text-underline-offset: 0.5rem;
+    text-decoration: rgb(181, 181, 181);
+  }
+  /*--------logo-------*/
+  .logo {
+    padding-top: 1rem;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo:hover {
+    cursor: default;
+  }
+  /*-----section---*/
+  section {
+    padding-top: 4vh;
+    height: 100%;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-container {
+    display: flex;
+  }
+
+  /*-----------PROFILE----------*/
+
+  #ahmedpic {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+  }
+  #profile {
+    padding-top: 5rem;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/Ljusarebakgrundsbild.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /*--------------info om mig-------*/
+  #about {
+    position: relative;
+    background-image: url(../images/Ljusarebakgrundsbild.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;
+    border-top: 3px solid black;
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .about-details-container {
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 8px;
+    width: 100%;
+  }
+
+  .details-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .details-container1,
+  .details-container2 {
+    padding: 10px;
+    margin-bottom: 4rem;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    display: inline-block;
+    width: 38vw;
+  }
+
+  .details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.2rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .details-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*----------section----*/
+  .section__text__p1 {
+    text-align: center;
+  }
+
+  .section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  /*------title----*/
+  .title {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  /*----------Button-------*/
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .btn {
+    border-radius: 2rem;
+    font-weight: 600;
+    outline: 0;
+    padding: 1rem;
+    position: relative;
+    transition: all 300ms ease;
+    width: 8rem;
+  }
+
+  .btn-color-1 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+  }
+
+  .btn-color-1:hover {
+    background: rgb(7, 7, 7);
+  }
+
+  .btn-color-1,
+  .btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    border: rgb(255, 255, 255) 0.1rem solid;
+    color: white;
+    cursor: pointer;
+  }
+
+  /*--------mina skills------*/
+  h3 {
+    padding-top: 10px;
+    font-style: italic;
+  }
+  .experience-skills {
+    padding: 14px;
+  }
+
+  #experience {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/Ljusarebakgrundsbild.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+  }
+
+  .experience-sub-title {
+    color: #555555;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: center;
+  }
+
+  article {
+    padding: 2rem;
+    flex: 0 0 30%;
+    background: white;
+    border-radius: 1rem;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  }
+
+  article .icon {
+    cursor: default;
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  .email-icon,
+  .phone-icon,
+  .fb-icon,
+  .insta-icon,
+  .link-icon,
+  .home-icon {
+    width: 11rem;
+  }
+}
+/*---------MEDIA QUERIES-------*/
+/* @media screen and (min-width: 600px) {
+  .nav-links {
+    width: 100%;
+    font-size: 1rem;
+  }
+} */
+/* 
 html {
   scroll-behavior: smooth;
 }
@@ -25,10 +602,10 @@ p {
   body {
     font-size: 1.8rem;
   }
-}
+} */
 
 /*--------NAV-----*/
-
+/* 
 nav {
   position: relative;
   display: flex;
@@ -54,9 +631,10 @@ a {
   color: black;
   text-decoration: none;
   color: #090909;
-}
-/*-------anchor------*/
+} */
 
+/*-------anchor------*/
+/* 
 a,
 .btn {
   transition: all 300ms ease;
@@ -68,9 +646,9 @@ a:hover {
   text-shadow: grey 1px 1px;
   text-underline-offset: 0.5rem;
   text-decoration: rgb(181, 181, 181);
-}
+} */
 /*--------logo-------*/
-.logo {
+/* .logo {
   padding-top: 1rem;
   font-size: 4rem;
   display: flex;
@@ -79,9 +657,9 @@ a:hover {
 
 .logo:hover {
   cursor: default;
-}
+} */
 /*-----section---*/
-section {
+/* section {
   padding-top: 4vh;
   height: 100%;
   margin: 0 10rem;
@@ -94,10 +672,10 @@ section {
 
 .section-container {
   display: flex;
-}
+} */
 
 /*-----------PROFILE----------*/
-
+/* 
 #ahmedpic {
   width: 250px;
   height: auto;
@@ -115,10 +693,10 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 /*--------------info om mig-------*/
-#about {
+/* #about {
   position: relative;
   background-image: url(../images/Ljusarebakgrundsbild.png);
   background-size: cover;
@@ -164,7 +742,6 @@ section {
   text-align: center;
   display: inline-block;
   width: 38vw;
-
 }
 
 .details-container {
@@ -182,16 +759,15 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .details-phone {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 /*----------section----*/
-.section__text {
+/* .section__text {
   text-align: center;
   align-self: center;
 }
@@ -208,15 +784,15 @@ section {
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
-}
+} */
 /*------title----*/
-.title {
+/* .title {
   font-size: 3rem;
   text-align: left;
-}
+} */
 
 /*----------Button-------*/
-
+/* 
 .btn-container {
   display: flex;
   justify-content: center;
@@ -247,10 +823,10 @@ section {
   border: rgb(255, 255, 255) 0.1rem solid;
   color: white;
   cursor: pointer;
-}
+} */
 
 /*--------mina skills------*/
-h3 {
+/* h3 {
   padding-top: 10px;
   font-style: italic;
 }
@@ -314,6 +890,12 @@ article:hover {
 article .icon {
   cursor: default;
   margin-bottom: 1rem;
-}
+} */
 
 /*---------MEDIA QUERIES-------*/
+/* @media screen and (min-width: 600px) {
+  .nav-links {
+    width: 100%;
+    font-size: 1rem;
+  }
+} */
