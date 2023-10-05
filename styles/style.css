@@ -87,6 +87,11 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background-image: radial-gradient(
+    circle 674px at 18.3% 77%,
+    rgb(206 215 226) 3.4%,
+    rgb(150 150 150) 56.6%
+  );
 }
 
 .section-container {
@@ -348,12 +353,19 @@ footer {
   section {
     padding-top: 4vh;
     height: 100%;
-    margin: 0 10rem;
+    margin: 0px 0rem;
     box-sizing: border-box;
     min-height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: radial-gradient(
+      circle 674px at 18.3% 77%,
+      rgb(206 215 226) 3.4%,
+      rgb(150 150 150) 56.6%
+    );
+    background-size: cover;
+    width: 100%;;
   }
 
   .section-container {
