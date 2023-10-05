@@ -31,11 +31,8 @@ nav {
 
 nav,
 .nav-links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 0.5rem;
+  gap: 1rem;
+  padding: 0;
 }
 
 .nav-links {
@@ -169,7 +166,7 @@ section {
   border-color: rgb(163, 163, 163);
   text-align: center;
   margin-bottom: 1rem;
-  width: 100%;
+
 }
 
 /*----------section----*/
@@ -266,6 +263,18 @@ article .icon {
   margin-bottom: 1rem;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+.icons img {
+  width: 50px;
+  height: 50px;
+}
+.social-icon {
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
   body {
     font-style: italic;
@@ -344,6 +353,17 @@ article .icon {
     display: flex;
   }
 
+
+
+
+
+
+
+
+
+
+
+  
   /*-----------PROFILE----------*/
 
   #ahmedpic {
@@ -563,339 +583,11 @@ article .icon {
     display: flex;
     justify-content: center;
   }
-  .email-icon,
-  .phone-icon,
-  .fb-icon,
-  .insta-icon,
-  .link-icon,
-  .home-icon {
-    width: 11rem;
+ .icons img {
+    width: 50px;
+    height: 50px;
+  }
+  .social-icon {
+    position: relative;
   }
 }
-/*---------MEDIA QUERIES-------*/
-/* @media screen and (min-width: 600px) {
-  .nav-links {
-    width: 100%;
-    font-size: 1rem;
-  }
-} */
-/* 
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-style: italic;
-  font-size: 1.3rem;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  font-family: "Poppins", sans-serif;
-}
-
-p {
-  position: relative;
-  color: rgb(85, 85, 85);
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 1.8rem;
-  }
-} */
-
-/*--------NAV-----*/
-/* 
-nav {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 17vh;
-  border-bottom: 5px solid black;
-}
-nav,
-.nav-links {
-  display: flex;
-  justify-content: center;
-}
-
-.nav-links {
-  list-style: none;
-  font-size: 2rem;
-  gap: 2rem;
-  height: 5rem;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  color: #090909;
-} */
-
-/*-------anchor------*/
-/* 
-a,
-.btn {
-  transition: all 300ms ease;
-}
-
-a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-shadow: grey 1px 1px;
-  text-underline-offset: 0.5rem;
-  text-decoration: rgb(181, 181, 181);
-} */
-/*--------logo-------*/
-/* .logo {
-  padding-top: 1rem;
-  font-size: 4rem;
-  display: flex;
-  justify-content: center;
-}
-
-.logo:hover {
-  cursor: default;
-} */
-/*-----section---*/
-/* section {
-  padding-top: 4vh;
-  height: 100%;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section-container {
-  display: flex;
-} */
-
-/*-----------PROFILE----------*/
-/* 
-#ahmedpic {
-  width: 250px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
-}
-#profile {
-  padding-top: 5rem;
-  margin: 0;
-  flex-direction: column;
-  align-items: center;
-  background-image: url(../images/Ljusarebakgrundsbild.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
-/*--------------info om mig-------*/
-/* #about {
-  position: relative;
-  background-image: url(../images/Ljusarebakgrundsbild.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: left;
-  border-top: 3px solid black;
-  overflow: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-
-  margin-top: 2rem;
-  flex-direction: column-reverse;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-
-.about-details-container {
-  justify-content: center;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: 8px;
-  width: 100%;
-}
-
-.details-container1,
-.details-container2 {
-  padding: 10px;
-  margin-bottom: 4rem;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-  display: inline-block;
-  width: 38vw;
-}
-
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.2rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.details-email {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.details-phone {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-/*----------section----*/
-/* .section__text {
-  text-align: center;
-  align-self: center;
-}
-
-.section__text p {
-  font-weight: 600;
-}
-.section__text__p1 {
-  text-align: center;
-}
-
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-} */
-/*------title----*/
-/* .title {
-  font-size: 3rem;
-  text-align: left;
-} */
-
-/*----------Button-------*/
-/* 
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.btn {
-  border-radius: 2rem;
-  font-weight: 600;
-  outline: 0;
-  padding: 1rem;
-  position: relative;
-  transition: all 300ms ease;
-  width: 8rem;
-}
-
-.btn-color-1 {
-  border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1:hover {
-  background: rgb(7, 7, 7);
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  border: rgb(255, 255, 255) 0.1rem solid;
-  color: white;
-  cursor: pointer;
-} */
-
-/*--------mina skills------*/
-/* h3 {
-  padding-top: 10px;
-  font-style: italic;
-}
-.experience-skills {
-  padding: 14px;
-}
-
-#experience {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-image: url(../images/Ljusarebakgrundsbild.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 0;
-}
-
-.experience-sub-title {
-  color: #555555;
-  font-weight: 600;
-  font-size: 2rem;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: center;
-}
-
-article {
-  padding: 2rem;
-  flex: 0 0 30%;
-  background: white;
-  border-radius: 1rem;
-  border: 1px solid #e0e0e0;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-article:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
-}
-
-article .icon {
-  cursor: default;
-  margin-bottom: 1rem;
-} */
-
-/*---------MEDIA QUERIES-------*/
-/* @media screen and (min-width: 600px) {
-  .nav-links {
-    width: 100%;
-    font-size: 1rem;
-  }
-} */
